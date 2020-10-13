@@ -17,16 +17,17 @@
 <section id="year">
 <style>
  #content{
-     display:block;
+     display:inline;
+     padding-right: 2px;
      
  }
 </style>
 
 <?php  
-   for ($i=1960; $i < 2030; $i++) { 
+ /*  for ($i=1960; $i < 2030; $i++) { 
        echo  " <span id='content'>". $i."</span>";
    }
-
+*/
 
 ?>
 <?php 
@@ -39,14 +40,21 @@ for ($i=1960; $i < 2030; $i++) {
 </section>
 <style>
 #square{
-    margin-left:50%;
-    margin-top:-180%;
+    width:25%;
+    height: 80%;
+    border-style: solid;
+    border-color: grey;
+    border-width: thin;
+    display: block;
     
 }
 </style>
 <section id="square">
 <p>Some text</p>
-
+<p>Some text</p>
+<p>Some text</p>
+<p>Some text</p>
+<p>Some text</p>
 </section>
 </body>
 </html>
