@@ -10,9 +10,13 @@
     ?>
 </head>
 <body>
+<div id="navigation">
+
 <a href="#nextyear">Next year</a>
 <a href="#previousyear">Previous year</a>
 <a href="#firstyear">First year</a>
+</div>
+
 
 <section id="year">
 <style>
@@ -21,40 +25,103 @@
      padding-right: 2px;
      
  }
+ #navigation{
+position: absolute;
+display: block;
+margin-left: 78%;
+margin-top: 15%;
+ }
+ #navigation a{
+     display: block;
+     font-size: 50px;
+ }
 </style>
 
-<?php  
- /*  for ($i=1960; $i < 2030; $i++) { 
-       echo  " <span id='content'>". $i."</span>";
-   }
-*/
 
-?>
 <?php 
 
 for ($i=1960; $i < 2030; $i++) { 
     echo  "<a id='content' href='". $i."'>".$i."</a>";
+break;
 }
 
 ?>
 </section>
 <style>
-#square{
+.square{
     width:25%;
     height: 80%;
     border-style: solid;
     border-color: grey;
     border-width: thin;
-    display: block;
+    display: inline-block;
+    
     
 }
+
 </style>
-<section id="square">
-<p>Some text</p>
-<p>Some text</p>
-<p>Some text</p>
-<p>Some text</p>
-<p>Some text</p>
+<section class="square">
+<p>Month</p>
+<p>Day</p>
+<p>Project</p>
+<p>Phase</p>
+<p>Hours predicted for that day</p>
+</section>
+<section class="square">
+<p>Month</p>
+<p>Day</p>
+<p>Project</p>
+<p>Phase</p>
+<p>Hours predicted for that day</p>
+</section>
+<section class="square">
+<p>Month</p>
+<p>Day</p>
+<p>Project</p>
+<p>Phase</p>
+<p>Hours predicted for that day</p>
+</section>
+<section class="square">
+<p>Month</p>
+<p>Day</p>
+<p>Project</p>
+<p>Phase</p>
+<p>Hours predicted for that day</p>
+</section>
+<section class="square">
+<p>Month</p>
+<p>Day</p>
+<p>Project</p>
+<p>Phase</p>
+<p>Hours predicted for that day</p>
+</section>
+<section class="square">
+<p>Month</p>
+<p>Day</p>
+<p>Project</p>
+<p>Phase</p>
+<p>Hours predicted for that day</p>
+</section>
+<section class="square">
+<p>Month</p>
+<p>Day</p>
+<p>Project</p>
+<p>Phase</p>
+<p>Hours predicted for that day</p>
+</section>
+<section class="square">
+<p>Month</p>
+<p>Day</p>
+<p>Project</p>
+<p>Phase</p>
+<p>Hours predicted for that day</p>
+</section>
+<section class="square">
+<p>Month</p>
+<p>Day</p>
+<p>Project</p>
+<p>Phase</p>
+<p>Hours predicted for that day</p>
 </section>
 </body>
 </html>
