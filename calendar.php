@@ -37,7 +37,6 @@ margin-top: 15%;
  }
 </style>
 
-
 <?php 
 
 for ($i=1960; $i < 2030; $i++) { 
@@ -60,13 +59,33 @@ break;
 }
 
 </style>
-<section class="square">
-<p>Month</p>
-<p>Day</p>
-<p>Project</p>
-<p>Phase</p>
-<p>Hours predicted for that day</p>
+<section class="details">
+
 </section>
+<section class="square" onClick="getDetails()">
+<p id="month">Month</p>
+<p id="day">Day</p>
+<p id="project">Project</p>
+<p id="phase">Phase</p>
+<p id="hours">Hours predicted for that day</p>
+</section>
+
+<script>
+
+function getDetails(){
+    var month=document.getElementById("month").textContent;
+    var day=document.getElementById("day").textContent;
+    var project=document.getElementById("project").textContent;
+    var phase=document.getElementById("phase").textContent;
+    var hours=document.getElementById("hours").textContent;
+
+    alert(month+day+project+phase+hours);
+
+}
+
+</script>
+
+
 <section class="square">
 <p>Month</p>
 <p>Day</p>
